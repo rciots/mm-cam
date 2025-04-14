@@ -1,7 +1,6 @@
 const socketcli = require("socket.io-client");
 const { spawn } = require("child_process");
-var cliport = process.env.CLI_PORT || 8080;
-var wsport = process.env.WS_PORT || 8081;
+var cliport = process.env.CLI_PORT || 8081;
 var videodevice = process.env.VIDEO_DEVICE || "video4";
 var connectorsvc= process.env.CONNECTOR_SVC || "localhost";
 const ioclient = new socketcli.connect("http://" + connectorsvc+ ":" + cliport, {
