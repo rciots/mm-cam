@@ -13,7 +13,7 @@ var ffmpeg_process = function(){
     "-i", "/dev/" + videodevice,
     "-f", "mpegts",
     "-codec:v", "mpeg1video",
-    "-b:v", "2000k",
+    "-b:v", "2400k",
     "-bf", "0",
     "pipe:1"
   ]);
