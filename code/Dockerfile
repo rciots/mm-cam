@@ -12,4 +12,4 @@ RUN dnf install ffmpeg --enablerepo="codeready-builder-for-rhel-9-x86_64-rpms" -
 RUN dnf clean all
 USER 1001
 EXPOSE 8080
-CMD npm start
+CMD node app.js
